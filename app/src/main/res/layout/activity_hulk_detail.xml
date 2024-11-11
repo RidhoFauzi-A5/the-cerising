@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- ScrollView untuk seluruh halaman -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Toolbar untuk tombol kembali -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/colorPrimary"
+                android:title="The Incredible Hulk"
+                android:titleTextColor="@android:color/white"/>
+
+            <!-- Gambar Film -->
+            <ImageView
+                android:id="@+id/imageHulkDetail"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/hulk_thumbnail"
+                android:scaleType="centerCrop" />
+
+            <!-- Judul Film -->
+            <TextView
+                android:id="@+id/titleHulkDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Incredible Hulk"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textColor="#000000" />
+
+            <!-- Deskripsi Film -->
+            <TextView
+                android:id="@+id/descHulkDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Incredible Hulk (2008) adalah film kedua dalam Marvel Cinematic Universe (MCU), yang mengisahkan tentang Bruce Banner (diperankan oleh Edward Norton), seorang ilmuwan yang terjebak dalam perubahan tubuh menjadi Hulk, sebuah makhluk raksasa hijau yang sangat kuat dan tak terkendali setiap kali ia marah atau tertekan.\n\nCerita dimulai dengan prolog yang menjelaskan asal-usul perubahan Bruce Banner menjadi Hulk. Bruce menjadi subjek eksperimen militer yang gagal, yang membuat tubuhnya terpapar sinar gamma. Efeknya, ketika ia mengalami emosi intens, tubuh Bruce berubah menjadi Hulk yang berbahaya. Untuk menghindari perhatian militer dan bahaya yang ditimbulkan oleh perubahan dirinya, Bruce pergi mengasingkan diri di Brasil, jauh dari kehidupan sebelumnya di Amerika Serikat.\n\nDi Brasil, Bruce berusaha mengendalikan amarahnya dan menemukan solusi untuk mengobati kondisinya. Namun, keadaannya semakin buruk ketika ia tanpa sengaja mengungkapkan keberadaannya kepada tentara yang dipimpin oleh Letnan Jenderal Thaddeus Ross (diperankan oleh William Hurt). Tentara Ross mencari cara untuk memanfaatkan Hulk sebagai senjata, dan mereka mulai mengejar Bruce.\n\nBruce akhirnya kembali ke Amerika untuk mencari solusi lebih lanjut tentang penyakitnya, dan di sana ia bertemu dengan Betty Ross (diperankan oleh Liv Tyler), mantan pacarnya yang juga bekerja di militer. Betty, yang masih peduli dengan Bruce, membantunya untuk melarikan diri dari pengejaran militer.\n\nNamun, masalah semakin rumit ketika Bruce bertemu dengan seorang ilmuwan lain, Emil Blonsky (diperankan oleh Tim Roth), yang terobsesi untuk mendapatkan kekuatan yang sama seperti Hulk. Blonsky rela menjalani eksperimen militer yang mengubahnya menjadi makhluk raksasa lainnya yang dikenal sebagai Abomination, jauh lebih besar dan kuat dari Hulk. Blonsky, yang kini berubah menjadi Abomination, mulai mengamuk di kota New York, menimbulkan kerusakan besar dan mengancam nyawa banyak orang.\n\nDalam klimaks cerita, Bruce akhirnya harus mengendalikan Hulk untuk mengalahkan Abomination dalam pertempuran yang sengit di tengah kota. Meski awalnya Hulk kehilangan kendali, ia akhirnya berhasil mengalahkan Abomination dengan bantuan dari Betty dan teman-temannya.\n\nSetelah mengalahkan Abomination, Bruce memilih untuk mengasingkan diri kembali. Namun, film ini berakhir dengan Bruce menunjukkan bahwa ia dapat mengendalikan Hulk dan memahami lebih baik cara untuk hidup berdampingan dengan makhluk dalam dirinya.\n\nTema utama dari film ini adalah perjuangan internal Bruce Banner untuk mengendalikan sisi gelap dirinya dan mempertanggungjawabkan kekuatan yang ada pada dirinya, serta mencari jalan untuk menyembuhkan dirinya dari penyakit yang mengubah hidupnya. Film ini juga menggali tema tentang kekuasaan, ambisi, dan dampak dari eksperimen ilmiah yang tidak terkendali.\n\nMeskipun The Incredible Hulk tidak sebesar Iron Man dalam hal pengaruh dan popularitas, film ini tetap menjadi bagian penting dari MCU dan memperkenalkan karakter-karakter yang nantinya akan berperan dalam cerita-cerita Marvel selanjutnya."
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+
+            <!-- Tombol Kembali ke MainActivity -->
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kembali"
+                android:layout_marginTop="20dp"
+                android:onClick="goBackToHome"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

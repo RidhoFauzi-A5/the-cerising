@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- ScrollView untuk seluruh halaman -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Toolbar untuk tombol kembali -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/colorPrimary"
+                android:title="Spiderman 1"
+                android:titleTextColor="@android:color/white"/>
+
+            <!-- Gambar Film -->
+            <ImageView
+                android:id="@+id/imageSpidermanDetail"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/ironman_thumbnail"
+                android:scaleType="centerCrop" />
+
+            <!-- Judul Film -->
+            <TextView
+                android:id="@+id/titleSpidermanDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ironman 1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textColor="#000000" />
+
+            <!-- Deskripsi Film -->
+            <TextView
+                android:id="@+id/descSpidermanDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Film Iron Man (2008) mengisahkan tentang Tony Stark (diperankan oleh Robert Downey Jr.), seorang miliarder, jenius, dan playboy yang mengelola perusahaan senjata terkemuka Stark Industries. Tony dikenal sebagai sosok yang sangat percaya diri, namun kurang peduli terhadap dampak dari senjata yang diproduksi oleh perusahaannya.\n\nSuatu ketika, saat dalam perjalanan ke Afghanistan untuk memperkenalkan senjata terbaru dari Stark Industries, Tony diculik oleh kelompok teroris yang dikenal dengan nama Ten Rings. Mereka meminta Tony untuk membuat senjata pemusnah massal terbaru untuk mereka. Namun, alih-alih mengikuti perintah tersebut, Tony malah menciptakan sebuah setelan robot tempur menggunakan bahan-bahan yang ada di dalam gua tempat ia ditahan. Setelan tersebut, yang dikenal sebagai 'Iron Man,' membantu Tony melarikan diri dari kelompok teroris.\n\nSetelah berhasil melarikan diri, Tony kembali ke Amerika Serikat dan memutuskan untuk menghentikan produksi senjata milik Stark Industries yang telah menyebabkan kerusakan dan kekacauan di dunia. Ia mulai fokus pada pengembangan teknologi yang lebih berguna untuk umat manusia, dan menciptakan armor canggih yang bisa digunakan untuk melindungi dunia dari ancaman teroris dan kejahatan lainnya.\n\nNamun, tindakan Tony menarik perhatian Obadiah Stane (diperankan oleh Jeff Bridges), rekan bisnis lama yang ternyata memiliki agenda tersembunyi. Obadiah yang kecewa dengan perubahan arah Tony, kemudian mencuri teknologi Iron Man untuk menciptakan setelan robot tempur yang lebih besar dan lebih kuat, yang dikenal sebagai Iron Monger. Dalam klimaks cerita, Tony harus bertarung dengan Iron Monger untuk menghentikan rencana jahat Obadiah yang dapat merusak dunia.\n\nTony Stark akhirnya mengungkapkan kepada publik bahwa ia adalah Iron Man, mengubah cara pandang dunia terhadap dirinya dan menyadarkan orang banyak tentang tanggung jawab moral yang dimilikinya.\n\nTema utama dari film ini adalah perjalanan Tony Stark dari seorang individu yang egois dan tidak peduli terhadap dunia menjadi seorang pahlawan yang siap menghadapi konsekuensi dari setiap tindakannya demi kebaikan umat manusia. Film ini menggabungkan elemen teknologi, aksi, dan drama pribadi yang kuat.\n\nIron Man menjadi titik awal dari Marvel Cinematic Universe (MCU), dan kesuksesannya membuka jalan bagi film-film superhero lainnya yang membentuk dunia Marvel yang kita kenal sekarang."
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+            <!-- Tombol Kembali ke MainActivity -->
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kembali"
+                android:layout_marginTop="20dp"
+                android:onClick="goBackToHome" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

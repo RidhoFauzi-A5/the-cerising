@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- ScrollView untuk seluruh halaman -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Toolbar untuk tombol kembali -->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/colorPrimary"
+                android:title="The Incredible Hulk"
+                android:titleTextColor="@android:color/white"/>
+
+            <!-- Gambar Film -->
+            <ImageView
+                android:id="@+id/imageHulkDetail"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/spiderman_thumbnail"
+                android:scaleType="centerCrop" />
+
+            <!-- Judul Film -->
+            <TextView
+                android:id="@+id/titleHulkDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spiderman 1 (2002)"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textColor="#000000" />
+
+            <!-- Deskripsi Film -->
+            <TextView
+                android:id="@+id/descSpidermanDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spider-Man (2002) adalah film superhero yang disutradarai oleh Sam Raimi dan merupakan adaptasi dari karakter Marvel Comics, Spider-Man. Film ini mengisahkan asal-usul Peter Parker (diperankan oleh Tobey Maguire), seorang remaja biasa yang berubah menjadi superhero setelah mendapatkan kekuatan super.\n\nCerita dimulai dengan Peter Parker, seorang siswa SMA yang cerdas namun sering dibuli. Ia tinggal bersama paman dan bibinya, Ben (diperankan oleh Cliff Robertson) dan May Parker (diperankan oleh Rosemary Harris). Peter jatuh cinta pada teman masa kecilnya, Mary Jane Watson (diperankan oleh Kirsten Dunst), namun ia merasa tidak cukup berani untuk mengungkapkan perasaannya.\n\nSuatu hari, saat mengikuti kunjungan ilmiah ke sebuah laboratorium, Peter digigit oleh seekor laba-laba yang terpapar sinar radiasi. Akibat gigitan tersebut, Peter mulai merasakan perubahan aneh pada tubuhnya, seperti kekuatan fisik yang luar biasa, kemampuan untuk memanjat dinding, dan peningkatan indera yang tajam. Ia kemudian menemukan bahwa dirinya memiliki kemampuan luar biasa yang membuatnya lebih kuat dan cepat daripada manusia biasa.\n\nPada saat yang sama, seorang ilmuwan bernama Norman Osborn (diperankan oleh Willem Dafoe) terlibat dalam eksperimen yang gagal, yang mengubahnya menjadi Green Goblin, seorang villain yang sangat berbahaya. Osborn, yang juga adalah ayah dari teman dekat Peter, Harry Osborn (diperankan oleh James Franco), kehilangan kendali atas dirinya setelah terkena dampak dari eksperimen yang dilakukannya, dan mulai mengincar kota New York.\n\nPeter merasa dilema dengan kekuatannya dan bagaimana menggunakannya. Setelah paman Ben terbunuh dalam sebuah perampokan, yang secara langsung disebabkan oleh tindakan Peter yang tidak mencegah seorang penjahat melarikan diri, ia merasa sangat bersalah. Ia menyadari bahwa dengan kekuatan besar yang dimilikinya, datang tanggung jawab yang besar. Ini adalah titik balik bagi Peter, yang memutuskan untuk menggunakan kekuatannya untuk melindungi orang lain sebagai Spider-Man.\n\nSebagai Spider-Man, Peter mulai berjuang melawan kejahatan di kota New York, namun dia juga harus menghadapi berbagai tantangan pribadi. Dia terus berjuang untuk menjaga identitasnya sebagai Spider-Man sembari mempertahankan hubungannya dengan Mary Jane. Di saat yang sama, ia harus menghadapi Norman Osborn, yang telah menjadi Green Goblin dan bertekad untuk menghancurkan Spider-Man.\n\nGreen Goblin mengetahui identitas rahasia Spider-Man dan memanfaatkan informasi tersebut untuk menciptakan kekacauan, bahkan berusaha untuk membunuh Mary Jane dan menguji keberanian Peter. Dalam pertarungan yang klimaks, Spider-Man dan Green Goblin saling berhadapan di atas jembatan. Pada akhirnya, Green Goblin, setelah berusaha mengalahkan Spider-Man, tewas dalam sebuah kecelakaan yang terjadi ketika dirinya sendiri terkena senjata miliknya.\n\nFilm ini berakhir dengan Peter yang memilih untuk tetap menjaga identitas rahasianya dan melanjutkan perjuangannya sebagai Spider-Man demi melindungi kota dan orang-orang yang ia cintai, meskipun ia harus menghadapi konsekuensi dan pengorbanan pribadi.\n\nTema utama dari Spider-Man adalah tentang pertumbuhan pribadi, tanggung jawab, dan pengorbanan. Peter Parker belajar bahwa menjadi seorang pahlawan berarti mengorbankan kebahagiaan pribadi demi kebaikan orang banyak. Film ini juga menyoroti konflik batin seorang remaja yang harus memilih antara kehidupan normal dan kehidupan sebagai seorang superhero.\n\nFilm Spider-Man ini sukses besar dan menjadi titik awal trilogi Spider-Man yang disutradarai oleh Sam Raimi, yang kemudian membuka jalan bagi popularitas karakter Spider-Man di layar lebar."
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp" />
+
+
+
+            <!-- Tombol Kembali ke MainActivity -->
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kembali"
+                android:layout_marginTop="20dp"
+                android:onClick="goBackToHome"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
